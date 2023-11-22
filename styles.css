@@ -1,0 +1,207 @@
+/* Reset some default styles for better consistency across browsers */
+body,
+h1,
+h2,
+h3,
+p 
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    /*font-family: 'Arial', sans-serif;*/
+    font-family: 'Courier New', 'Courier New', Courier, monospace;
+    /*font-family: 'Monaco', monospace;*/
+}
+
+/* Navigation styles */
+.navbar 
+{
+  /*background-color: #7EBF91;*/
+  /*background-color: #7D876E;*/
+  background-color: #5D7793;
+}
+
+/*Christina Casey - name on left*/
+.navbar-brand 
+{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 20px 100px;
+  color: #000;
+  text-decoration: none; /*removes link underline*/
+  white-space: nowrap;
+}
+
+.navbar-toggler 
+{
+  color: #fff;
+}
+
+/*about - portfolio - contact*/
+.navbar-nav 
+{
+  display: flex;
+  align-items: center;
+  list-style: none; /*removes bullet points*/
+  margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) 
+{
+  .navbar-nav 
+  {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar-nav .nav-item 
+  {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}
+
+
+.navbar-nav .nav-link 
+{
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000; /*text color*/
+  padding: 20px;
+  text-decoration: none; /*removes link underline*/
+}
+
+/*space between brand and navigation */
+.navbar .container 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  /* Adjust the spacing between brand and navigation in mobile view */
+  .navbar .container 
+  {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .navbar-nav 
+  {
+      margin-top: 60px; /* Adjust the margin for better spacing */
+  }
+}
+
+/* Header styles */
+header 
+{
+    padding: 80px 0;
+    text-align: center;
+}
+
+header h1 
+{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* flex container for centering */
+.center-container 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh; /* vh = viewport height */
+}
+
+/* circle image cropp */
+.circular-image 
+{
+  width: 250px; /* size of circle */
+  height: 250px; 
+  border-radius: 50%; /* circle */
+  overflow: hidden; /* hide overflow */
+}
+
+/* center img in container */
+.circular-image img 
+{
+  width: 100%; /* Make the image take up 100% of the circular container */
+  height: 100%; /* Make the image take up 100% of the circular container */
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+}
+
+/*img {
+  width: 300px;
+  height: 300px;
+}*/
+
+.container
+{
+  width: 100%;
+  padding-right: 1;
+  padding-left: 1;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* About section styles */
+#about 
+{
+    padding: 80px 200px;
+}
+
+/* Portfolio section styles */
+#portfolio 
+{
+    padding: 80px 200px;
+}
+
+/* Contact section styles */
+#contact 
+{
+    padding: 80px 200px;
+}
+
+/* Social section styles */
+#socials 
+{
+    padding: 80px 200px;
+}
+/* Footer styles */
+footer 
+{
+    /*background-color: #7EBF91;*/
+    background-color: #5D7793;
+    color: #000;
+    padding: 20px 100px;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) 
+{
+    header 
+    {
+        padding: 60px 15px;
+    }
+    footer 
+    {
+        padding: 15px 15px;
+    }
+}
+
+/*define alternating background colors for sections */
+section:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+section:nth-child(even) {
+  background-color: #ffffff;
+}
